@@ -25,7 +25,9 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.ycode.stock.daomodel.TradeInputs;
 import com.ycode.stock.model.CompanyOpenIndex;
+import com.ycode.stock.model.MonthData;
 import com.ycode.stock.model.OpenIndexOutput;
+import com.ycode.stock.model.SameDayData;
 
 public class FileUtill {
 	public static String saveFile(String userId, String fileName, MultipartFile multipartFile) throws IOException {
@@ -295,5 +297,45 @@ public class FileUtill {
 		return companyOpenIndexList;
 
 	
+	}
+	
+	public static SameDayData parsesameDayData(List<TradeInputs> tradeInputs) {
+		// TODO Auto-generated method stub
+		
+		SameDayData sameDayData= new SameDayData();
+		if(!tradeInputs.isEmpty())
+		{
+		TradeInputs TradeInput = tradeInputs.get(0);
+		sameDayData.setCompanyName(TradeInput.getClientType());
+		sameDayData.setDate(TradeInput.getTradeDate().toString());
+		sameDayData.setCallLong(TradeInput.getOptionIndexCallLong());
+		sameDayData.setCallShort(TradeInput.getOptionIndexCallShort());
+		sameDayData.setPutLong(TradeInput.getOptionIndexPutLong());
+		sameDayData.setPutShort(TradeInput.getOptionIndexPutShort());
+		sameDayData.setTillDateCallNet(TradeInput.getOptionIndexCallLong()-TradeInput.getOptionIndexCallShort());
+		sameDayData.setTillDatePutNet(TradeInput.getOptionIndexPutLong()-TradeInput.getOptionIndexPutShort());
+		
+		
+		
+		}
+		return sameDayData;
+	}
+
+	public static ArrayList<MonthData> parseMonthData(List<TradeInputs> monthTradeInputs) {
+		// TODO Auto-generated method stub
+		
+		ArrayList<MonthData> monthDataList =new ArrayList<>();
+		
+		for(TradeInputs monthDateData:monthTradeInputs)
+		{
+			MonthData MonthData = new MonthData();
+			MonthData.setCompanyName(monthDateData.getClientType());
+			MonthData.setDate(monthDateData.getTradeDate().toString());
+			MonthData.setTillDateCallNet(monthDateData.getOptionIndexCallLong()-monthDateData.getOptionIndexCallShort());
+			MonthData.setTillDatePutNet(monthDateData.getOptionIndexPutLong()-monthDateData.getOptionIndexPutShort());
+			monthDataList.add(MonthData);
+		}
+		
+		return monthDataList;
 	}
 }

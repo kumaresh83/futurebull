@@ -17,100 +17,100 @@ public class TradeInputs {
 	   private Long ID;
 	
 	public String getClientType() {
-		return CLIENT_TYPE;
+		return clientType;
 	}
 	public void setClientType(String clientType) {
-		this.CLIENT_TYPE = clientType;
+		this.clientType = clientType;
 	}
 	public Date getTradeDate() {
-		return TRADE_DATE;
+		return tradeDate;
 	}
 	public void setTradeDate(Date tradeDate) {
-		this.TRADE_DATE = tradeDate;
+		this.tradeDate = tradeDate;
 	}
 	public int getFutureIndexLong() {
-		return FUTURE_INDEX_LONG;
+		return futureIndexLong;
 	}
 	public void setFutureIndexLong(int futureIndexLong) {
-		this.FUTURE_INDEX_LONG = futureIndexLong;
+		this.futureIndexLong = futureIndexLong;
 	}
 	public int getFutureIndexShort() {
-		return FUTURE_INDEX_SHORT;
+		return futureIndexShort;
 	}
 	public void setFutureIndexShort(int futureIndexShort) {
-		this.FUTURE_INDEX_SHORT = futureIndexShort;
+		this.futureIndexShort = futureIndexShort;
 	}
 	public int getFutureStockLong() {
-		return FUTUTRE_STOCK_LONG;
+		return futureStockLong;
 	}
 	public void setFutureStockLong(int futureStockLong) {
-		this.FUTUTRE_STOCK_LONG = futureStockLong;
+		this.futureStockLong = futureStockLong;
 	}
 	public int getFutureStockShort() {
-		return FUTURE_STOCK_SHORT;
+		return futureStockShort;
 	}
 	public void setFutureStockShort(int futureStockShort) {
-		this.FUTURE_STOCK_SHORT = futureStockShort;
+		this.futureStockShort = futureStockShort;
 	}
 	public int getOptionIndexCallLong() {
-		return OPTION_INDEX_CALL_LONG;
+		return optionIndexCallLong;
 	}
 	public void setOptionIndexCallLong(int optionIndexCallLong) {
-		this.OPTION_INDEX_CALL_LONG = optionIndexCallLong;
+		this.optionIndexCallLong = optionIndexCallLong;
 	}
 	public int getOptionIndexPutLong() {
-		return OPTION_INDEX_PUT_LONG;
+		return optionIndexPutLong;
 	}
 	public void setOptionIndexPutLong(int optionIndexPutLong) {
-		this.OPTION_INDEX_PUT_LONG = optionIndexPutLong;
+		this.optionIndexPutLong = optionIndexPutLong;
 	}
 	public int getOptionIndexCallShort() {
-		return OPTION_INDEX_CALL_SHORT;
+		return optionIndexCallShort;
 	}
 	public void setOptionIndexCallShort(int optionIndexCallShort) {
-		this.OPTION_INDEX_CALL_SHORT = optionIndexCallShort;
+		this.optionIndexCallShort = optionIndexCallShort;
 	}
 	public int getOptionIndexPutShort() {
-		return OPTION_INDEX_PUT_SHORT;
+		return optionIndexPutShort;
 	}
 	public void setOptionIndexPutShort(int optionIndexPutShort) {
-		this.OPTION_INDEX_PUT_SHORT = optionIndexPutShort;
+		this.optionIndexPutShort = optionIndexPutShort;
 	}
 	public int getOptionStockCallLong() {
-		return OPTION_STOCK_CALL_LONG;
+		return optionStockCallLong;
 	}
 	public void setOptionStockCallLong(int optionStockCallLong) {
-		this.OPTION_STOCK_CALL_LONG = optionStockCallLong;
+		this.optionStockCallLong = optionStockCallLong;
 	}
 	public int getOptionStockPutLong() {
-		return OPTION_STOCK_PUT_LONG;
+		return optionStockPutLong;
 	}
 	public void setOptionStockPutLong(int optionStockPutLong) {
-		this.OPTION_STOCK_PUT_LONG = optionStockPutLong;
+		this.optionStockPutLong = optionStockPutLong;
 	}
 	public int getOptionStockCallShort() {
-		return OPTION_STOCK_CALL_SHORT;
+		return optionStockCallShort;
 	}
 	public void setOptionStockCallShort(int optionStockCallShort) {
-		this.OPTION_STOCK_CALL_SHORT = optionStockCallShort;
+		this.optionStockCallShort = optionStockCallShort;
 	}
 	public int getOptionStockPutShort() {
-		return OPTION_STOCK_PUT_SHORT;
+		return optionStockPutShort;
 	}
 	public void setOptionStockPutShort(int optionStockPutShort) {
-		this.OPTION_STOCK_PUT_SHORT = optionStockPutShort;
+		this.optionStockPutShort = optionStockPutShort;
 	}
 	public int getTotalLongContracts() {
-		return TOTAL_LONG_CONTRACTS;
+		return totalLongContracts;
 	}
 	public void setTotalLongContracts(int totalLongContracts) {
-		this.TOTAL_LONG_CONTRACTS = totalLongContracts;
+		this.totalLongContracts = totalLongContracts;
 	}
 	public int getTotalShortContracts() {
-		return TOTAL_SHORT_CONTRACTS;
+		return totalShortContracts;
 	}
 	public void setTotalShortContracts(int totalShortContracts) {
-		this.TOTAL_SHORT_CONTRACTS = totalShortContracts;
+		this.totalShortContracts = totalShortContracts;
 	}
 	
 	public Long getId() {
@@ -120,21 +120,21 @@ public class TradeInputs {
 		this.ID = id;
 	}
 
-	private String CLIENT_TYPE;
-	private Date TRADE_DATE;
-	private int FUTURE_INDEX_LONG;
-	private int FUTURE_INDEX_SHORT;
-	private int FUTUTRE_STOCK_LONG;
-	private int FUTURE_STOCK_SHORT;
-	private int OPTION_INDEX_CALL_LONG;
-	private int OPTION_INDEX_PUT_LONG;
-	private int OPTION_INDEX_CALL_SHORT;
-	private int OPTION_INDEX_PUT_SHORT;
-	private int OPTION_STOCK_CALL_LONG;
-	private int OPTION_STOCK_PUT_LONG;
-	private int OPTION_STOCK_CALL_SHORT;
-	private int OPTION_STOCK_PUT_SHORT;
-	private int TOTAL_LONG_CONTRACTS;
-	private int TOTAL_SHORT_CONTRACTS;
+	private String clientType;
+	private Date tradeDate;
+	private int futureIndexLong;
+	private int futureIndexShort;
+	private int futureStockLong;
+	private int futureStockShort;
+	private int optionIndexCallLong;
+	private int optionIndexPutLong;
+	private int optionIndexCallShort;
+	private int optionIndexPutShort;
+	private int optionStockCallLong;
+	private int optionStockPutLong;
+	private int optionStockCallShort;
+	private int optionStockPutShort;
+	private int totalLongContracts;
+	private int totalShortContracts;
 
 }
